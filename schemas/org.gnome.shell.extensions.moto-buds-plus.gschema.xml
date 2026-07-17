@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="moto-buds-plus@ArnavK-09">
+  <schema path="/org/gnome/shell/extensions/moto-buds-plus/" id="org.gnome.shell.extensions.moto-buds-plus">
+    <key name="indicator-mode" type="s">
+      <choices>
+        <choice value="panel"/>
+        <choice value="tray"/>
+        <choice value="quick-settings"/>
+      </choices>
+      <default>'panel'</default>
+      <summary>Where the indicator appears: panel, tray or quick-settings</summary>
+    </key>
+    <key name="show-battery-text" type="b">
+      <default>true</default>
+      <summary>Show battery percentage next to the indicator icon</summary>
+    </key>
+    <key name="show-panel-label" type="b">
+      <default>false</default>
+      <summary>Show the device name on the panel button</summary>
+    </key>
+    <key name="show-when-disconnected" type="b">
+      <default>false</default>
+      <summary>Always show the indicator even when no Moto Buds+ is connected</summary>
+    </key>
+    <key name="devices" type="as">
+      <default>[]</default>
+      <summary>Per-device persisted state as JSON objects</summary>
+    </key>
+  </schema>
+</schemalist>

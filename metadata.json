@@ -1,0 +1,11 @@
+{
+  "uuid": "moto-buds-plus@ArnavK-09",
+  "name": "Moto Buds+",
+  "description": "Independent GNOME Shell control for Motorola Moto Buds+. ANC, equalizer, find-my-buds and audio toggles over a direct Bluetooth link.",
+  "url": "https://github.com/ArnavK-09",
+  "shell-version": ["46", "47", "48", "49", "50"],
+  "session-modes": ["user", "unlock-dialog"],
+  "version": 1,
+  "settings-schema": "org.gnome.shell.extensions.moto-buds-plus",
+  "gettext-domain": "moto-buds-plus@ArnavK-09"
+}

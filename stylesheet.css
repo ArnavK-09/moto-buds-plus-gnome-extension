@@ -172,10 +172,6 @@
   -natural-hpadding: 2px;
   -minimum-hpadding: 0px;
 }
-.mbp-panel-label {
-  font-size: 0.9em;
-  font-weight: 600;
-}
 .mbp-placeholder-status {
   font-weight: 700;
   font-size: 0.95em;

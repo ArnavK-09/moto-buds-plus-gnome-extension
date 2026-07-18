@@ -1,14 +1,13 @@
----
 <h1 align="center">🎧 Moto Buds+ 🎧</h1>
 <h4 align="center">Seamlessly connect, monitor, and control your Moto Buds+ wireless earbuds directly from the GNOME Shell desktop.</h4>
 
 <p align="center">
-    <img alt="hero" width="450" src="https://emoji-route.deno.dev/svg/🎧" />
+    <img alt="hero" width="450" src="https://emoji-route.deno.dev/png/🎧" />
 </p>
 
 > [!NOTE]
-> 
-> A powerful, native GNOME Shell extension for managing Moto Buds+ wireless earbuds directly from your desktop. The extension operates entirely within the GNOME Shell environment using GJS. It continuously scans for paired Moto Buds+ devices using the system DBus and BlueZ. When the earbuds connect to your PC, the extension automatically establishes a direct low-level socket connection to the earbuds to read hardware states (battery, ANC, EQs) and send commands.
+>
+> A native GNOME Shell extension for managing Moto Buds+ wireless earbuds directly from your desktop. The extension operates entirely within the GNOME Shell environment using GJS. It continuously scans for paired Moto Buds+ devices using the system DBus and BlueZ. When the earbuds connect to your PC, the extension automatically establishes a direct low-level socket connection to the earbuds to read hardware states (battery, ANC, EQs) and send commands.
 
 ## 🌟 Features
 
@@ -30,6 +29,7 @@
 ### Backend Socket Implementation
 
 There is no separate background daemon or OS-level backend process. The entire "backend" is self-contained within the extension's JS runtime:
+
 - **Profile Registration**: The extension registers a custom Bluetooth profile over DBus with BlueZ. When BlueZ establishes an RFCOMM/L2CAP connection with the earbuds, it passes a raw UNIX File Descriptor (`fd`) directly to the extension.
 - **Socket I/O**: `Gio.Socket` wraps this file descriptor, allowing asynchronous, non-blocking byte reads and writes (`read_bytes_async`, `write_all_async`) directly on the GNOME Shell main loop.
 - **Binary Protocol**: Packets are framed with a 4-byte header (`HEAD`), a 2-byte length, the payload, a 4-byte CRC32 checksum, and a 4-byte tail (`TAIL`). The socket class handles queuing and reassembly of fragmented Bluetooth packets natively.
@@ -105,8 +105,6 @@ Found a bug or need help? Please create an issue on the [GitHub repository](http
 ## 🪉Acknowledgements
 
 - `maniacx/BudsLink`
-
----
 
 <h2 align="center">📄 License</h2>
 

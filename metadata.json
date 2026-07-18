@@ -1,7 +1,7 @@
 {
   "uuid": "moto-buds-plus@ArnavK-09",
   "name": "Moto Buds+",
-  "description": "",
+  "description": "write crisp description here...",
   "url": "https://github.com/ArnavK-09/moto-buds-plus-gnome-extension",
   "shell-version": ["46", "47", "48", "49", "50"],
   "session-modes": ["user", "unlock-dialog"],

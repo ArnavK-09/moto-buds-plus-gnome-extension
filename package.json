@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "lint": "bun x oxlint",
+    "lint:fix": "bun x oxlint --fix",
+    "format": "bun x prettier --write .",
+    "format:check": "bun x prettier --check ."
+  }
+}

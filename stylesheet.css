@@ -97,7 +97,9 @@
   margin-top: 6px;
 }
 .mbp-toggle {
-  padding: 12px 4px 10px 4px;
+  min-width: 3.4em;
+  min-height: 3.4em;
+  padding: 9px;
   margin-left: 6px;
   margin-right: 6px;
   border-radius: 12px;
@@ -105,11 +107,6 @@
 }
 .mbp-toggle-icon {
   color: rgba(255, 255, 255, 0.72);
-  margin-bottom: 5px;
-}
-.mbp-toggle-caption {
-  font-size: 0.72em;
-  font-weight: 600;
 }
 .mbp-toggle:hover {
   background-color: rgba(255, 255, 255, 0.16);
@@ -124,23 +121,31 @@
 .mbp-toggle:focus {
   background-color: rgba(255, 255, 255, 0.18);
 }
+.mbp-tooltip {
+  background-color: rgba(0, 0, 0, 0.88);
+  color: #ffffff;
+  padding: 4px 9px;
+  border-radius: 7px;
+  font-size: 0.82em;
+  font-weight: 600;
+}
 .mbp-pill-grid {
   margin-top: 6px;
 }
 .mbp-pill {
-  min-height: 2.1em;
-  border-radius: 9px;
+  min-height: 3.4em;
+  border-radius: 10px;
   margin: 5px;
-  padding: 7px 10px;
-  font-weight: 600;
-  font-size: 0.82em;
+  padding: 9px 6px;
   background-color: rgba(255, 255, 255, 0.07);
-}
-.mbp-pill-box {
-  spacing: 8px;
 }
 .mbp-pill-icon {
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 5px;
+}
+.mbp-pill-caption {
+  font-size: 0.78em;
+  font-weight: 600;
 }
 .mbp-pill:hover {
   background-color: rgba(255, 255, 255, 0.15);
@@ -180,5 +185,15 @@
 .mbp-placeholder-hint {
   font-size: 0.85em;
   color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+}
+.mbp-settings-btn {
+  margin-top: 4px;
+  padding: 9px;
+  border-radius: 9px;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.mbp-settings-btn:hover {
+  background-color: rgba(255, 255, 255, 0.16);
 }

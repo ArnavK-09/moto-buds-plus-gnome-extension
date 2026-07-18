@@ -47,45 +47,6 @@ There is no separate background daemon or OS-level backend process. The entire "
 
 ---
 
-## 💻 Contributing
-
-> [!TIP]  
-> We welcome contributions to improve **Moto Buds+**! If you have suggestions, bug fixes, or new feature ideas, follow these steps:
-
-1. **Fork the Repository**  
-   Click the **Fork** button at the top-right of the repo page.
-
-2. **Clone Your Fork**  
-   Clone the repo locally:
-
-   ```bash
-   git clone https://github.com/ArnavK-09/moto-buds-plus-gnome-extension.git
-   ```
-
-3. **Create a Branch**  
-   Create a new branch for your changes:
-
-   ```bash
-   git checkout -b your-feature-branch
-   ```
-
-4. **Make Changes**  
-   Implement your changes (bug fixes, features, etc.).
-
-5. **Commit and Push**  
-   Commit your changes and push the branch:
-
-   ```bash
-   git commit -m "feat(scope): description"
-   git push origin your-feature-branch
-   ```
-
-6. **Open a Pull Request**  
-   Open a PR with a detailed description of your changes.
-
-7. **Collaborate and Merge**  
-   The maintainers will review your PR, request changes if needed, and merge it once approved.
-
 ## 🙋‍♂️ Issues
 
 Found a bug or need help? Please create an issue on the [GitHub repository](https://github.com/ArnavK-09/moto-buds-plus-gnome-extension/issues) with a detailed description.

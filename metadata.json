@@ -4,8 +4,6 @@
   "description": "Seamlessly connect, monitor, and control your Moto Buds+ wireless earbuds directly from the GNOME Shell desktop.",
   "url": "https://github.com/ArnavK-09/moto-buds-plus-gnome-extension",
   "shell-version": ["46", "47", "48", "49", "50"],
-  "session-modes": ["user", "unlock-dialog"],
-  "version": 1,
   "settings-schema": "org.gnome.shell.extensions.moto-buds-plus",
   "gettext-domain": "moto-buds-plus@ArnavK-09"
 }

@@ -49,9 +49,9 @@ There is no separate background daemon or OS-level backend process. The entire "
 
 ## 📦 Packaging
 
-```bash
+```sh
 # Zip the codebase, excluding unnecessary files
-zip -r moto-buds-plus@ArnavK-09.zip . -x "*.git*" -x ".github/*" -x "screenshots/*" -x "README.md" -x "package.json" -x "LICENSE" -x "*.ox*" -x ".gitignore" -x "BUGS.md"
+zip -r moto-buds-plus@ArnavK-09.zip . -x "*.git*" -x ".github/*" -x "screenshots/*" -x "README.md" -x "package.json" -x "LICENSE" -x "*.ox*" -x ".gitignore"
 ```
 
 ## 🙋‍♂️ Issues

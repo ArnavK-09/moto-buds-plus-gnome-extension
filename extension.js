@@ -24,10 +24,10 @@ export default class MotoBudsPlus extends Extension {
     this._indicator = null;
     this._profileManager = new ProfileManager();
     this._scanner = new DeviceScanner();
-    this._scanner.connect("device", (_o, path, alias) =>
+    this._deviceConId = this._scanner.connect("device", (_o, path, alias) =>
       this._onDevice(path, alias),
     );
-    this._scanner.connect("device-gone", (_o, path) =>
+    this._deviceGoneConId = this._scanner.connect("device-gone", (_o, path) =>
       this._onDeviceGone(path),
     );
     this._scanner.init();
@@ -113,8 +113,18 @@ export default class MotoBudsPlus extends Extension {
     this._destroyIndicator();
     this._device?.destroy();
     this._device = null;
-    this._scanner?.destroy();
-    this._scanner = null;
+    if (this._scanner) {
+      if (this._deviceConId) {
+        this._scanner.disconnect(this._deviceConId);
+        this._deviceConId = 0;
+      }
+      if (this._deviceGoneConId) {
+        this._scanner.disconnect(this._deviceGoneConId);
+        this._deviceGoneConId = 0;
+      }
+      this._scanner.destroy();
+      this._scanner = null;
+    }
     this._profileManager?.destroy();
     this._profileManager = null;
     this._settings = null;

@@ -47,6 +47,13 @@ There is no separate background daemon or OS-level backend process. The entire "
 
 ---
 
+## 📦 Packaging
+
+```bash
+# Zip the codebase, excluding unnecessary files
+zip -r moto-buds-plus@ArnavK-09.zip . -x "*.git*" -x ".github/*" -x "screenshots/*" -x "README.md" -x "package.json" -x "LICENSE" -x "*.ox*" -x ".gitignore" -x "BUGS.md"
+```
+
 ## 🙋‍♂️ Issues
 
 Found a bug or need help? Please create an issue on the [GitHub repository](https://github.com/ArnavK-09/moto-buds-plus-gnome-extension/issues) with a detailed description.

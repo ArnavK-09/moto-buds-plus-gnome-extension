@@ -2,7 +2,7 @@
 <h4 align="center">Seamlessly connect, monitor, and control your Moto Buds+ wireless earbuds directly from the GNOME Shell desktop.</h4>
 
 <p align="center">
-    <img alt="hero" width="450" src="https://emoji-route.deno.dev/png/🎧" />
+    <img alt="hero" width="450" src="https://emoji-route.vercel.app/png/🎧" />
 </p>
 
 > [!NOTE]

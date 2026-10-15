@@ -43,7 +43,7 @@ There is no separate background daemon or OS-level backend process. The entire "
 | ![Quick Settings](./screenshots/quick-settings-toggle.png) |      ![Popup Menu](./screenshots/device-popup-menu.png)       |
 |                _Quick Settings Integration_                |                       _Device Controls_                       |
 |     ![Settings](./screenshots/extension-settings.png)      | ![Not Connected](./screenshots/not-connected-placeholder.png) |
-|                        _Preferences_                        |                          _Fallback_                           |
+|                       _Preferences_                        |                          _Fallback_                           |
 
 ---
 
